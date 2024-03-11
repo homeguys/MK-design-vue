@@ -1,0 +1,74 @@
+.ht-table-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+
+  /* 表格样式 */
+  .ht-table {
+    flex: 1;
+    overflow: hidden;
+
+    &.ht-table-pagination {
+      .ant-table {
+        height: calc(100% - 60px);
+      }
+    }
+
+    .ellipsis {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    /* 修改组件默认样式 */
+    .ant-spin-nested-loading,
+    .ant-spin-container,
+    .ant-table-content,
+    .ant-table-container {
+      height: 100%;
+    }
+
+    /* 修改组件默认样式 */
+    .ant-table {
+      width: 100%;
+      height: 100%;
+      padding-left: 0.1px;
+      background: none;
+
+      .ant-table-scroll {
+        height: 100%;
+        overflow: visible;
+        overflow-x: visible;
+
+        .ant-table-header {
+          margin-bottom: 0 !important;
+          overflow: visible !important;
+        }
+      }
+
+      .ant-table-header {
+        background: none;
+      }
+
+      .ant-table-body {
+        overflow-x: hidden !important;
+        overflow-y: auto !important;
+        background: none !important;
+      }
+    }
+  }
+
+  .ht-table-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+    color: #fff;
+
+    .ht-table-header-right {
+      display: flex;
+      gap: 16px;
+    }
+  }
+}

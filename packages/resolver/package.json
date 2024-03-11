@@ -1,0 +1,8 @@
+{
+  "name": "@htht/resolver",
+  "version": "1.0.0",
+  "description": "组件库自动导入插件",
+  "main": "./index",
+  "author": "wanglei",
+  "license": "MIT"
+}
