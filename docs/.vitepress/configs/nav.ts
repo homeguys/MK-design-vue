@@ -2,8 +2,8 @@
  * @Author: wanglei
  * @Date: 2023-12-06 10:14:14
  * @LastEditors: wanglei
- * @LastEditTime: 2024-03-01 11:11:55
- * @FilePath: /docs/.vitepress/configs/nav.ts
+ * @LastEditTime: 2024-04-07 16:35:00
+ * @FilePath: \docs\.vitepress\configs\nav.ts
  * @Descripttion:
  */
 import type { DefaultTheme } from 'vitepress';
@@ -29,9 +29,9 @@ export const nav: DefaultTheme.Config['nav'] = [
         activeMatch: '^/zh-CN/tech/gis',
       },
       {
-        text: '技术分享',
-        link: '/zh-CN/tech/share/',
-        activeMatch: '^/zh-CN/tech/share',
+        text: '移动端',
+        link: '/zh-CN/tech/mobile/',
+        activeMatch: '^/zh-CN/tech/mobile',
       },
     ],
   },

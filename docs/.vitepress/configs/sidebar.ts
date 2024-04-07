@@ -1,3 +1,11 @@
+/*
+ * @Author: wanglei
+ * @Date: 2024-04-07 16:24:46
+ * @LastEditors: wanglei
+ * @LastEditTime: 2024-04-07 16:33:10
+ * @FilePath: \docs\.vitepress\configs\sidebar.ts
+ * @Descripttion:
+ */
 import type { DefaultTheme } from 'vitepress';
 
 export const sidebar: DefaultTheme.Config['sidebar'] = {
@@ -15,19 +23,15 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       ],
     },
   ],
-  '/zh-CN/tech/gis': [
-    { text: 'Gis文档', items: [{ text: '简介', link: '/zh-CN/tech/gis/' }] },
-  ],
-  '/zh-CN/tech/share': [
+  '/zh-CN/tech/gis': [{ text: 'Gis文档', items: [{ text: '简介', link: '/zh-CN/tech/gis/' }] }],
+  '/zh-CN/tech/mobile': [
     {
-      text: '技术分享',
-      collapsed: true,
-      items: [{ text: '简介', link: '/zh-CN/tech/share/' }],
-    },
-    {
-      text: '技术分享1',
-      collapsed: true,
-      items: [{ text: '简介', link: '/zh-CN/tech/share/' }],
+      text: '移动端',
+      collapsed: false,
+      items: [
+        { text: '概览', link: '/zh-CN/tech/mobile/' },
+        { text: '雷电模拟器 + Charles App抓包', link: '/zh-CN/tech/mobile/Charles&Leidian' },
+      ],
     },
   ],
   '/zh-CN/utils/': [{ text: '工具总览', link: '/zh-CN/utils/index.md' }],
