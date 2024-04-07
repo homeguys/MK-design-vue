@@ -1,3 +1,7 @@
+---
+pageClass: component-page-class
+---
+
 # HQueryFilter
 
 :::demo
