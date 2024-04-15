@@ -7,7 +7,7 @@ import { $message } from '../../utils/message';
 import SourceCode from './vp-source-code.vue';
 import { ElTooltip, ElIcon, ElCollapseTransition } from 'element-plus';
 import { ConfigProvider } from 'ant-design-vue';
-import zhCN from 'ant-design-vue/es/locale/zh_CN';
+import zhCN from 'ant-design-vue/lib/locale/zh_CN';
 
 import type { Component } from 'vue';
 
@@ -47,7 +47,6 @@ const copyCode = async () => {
   }
   try {
     await copy(decodeURIComponent(props.rawSource));
-    console.log(text);
     $message.success('复制成功');
   } catch (e: any) {
     $message.error(e.message);
@@ -55,7 +54,6 @@ const copyCode = async () => {
 };
 
 onMounted(async () => {
-  console.log(props.path);
   demo.value = defineAsyncComponent(getModule(props.path));
 });
 </script>
@@ -130,11 +128,11 @@ onMounted(async () => {
 }
 
 .op-btns {
-  padding: 0.5rem;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   height: 2.5rem;
+  padding: 0.5rem;
 
   .el-icon {
     &:hover {
@@ -144,33 +142,34 @@ onMounted(async () => {
 
   .op-btn {
     margin: 0 0.5rem;
-    cursor: pointer;
     color: var(--text-color-lighter);
+    cursor: pointer;
     transition: 0.2s;
   }
 }
 
 .example-float-control {
+  position: sticky;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-top: 1px solid var(--border-color);
   height: 44px;
-  box-sizing: border-box;
-  background-color: var(--bg-color, #fff);
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
   margin-top: -1px;
   color: var(--el-text-color-secondary);
   cursor: pointer;
-  position: sticky;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 10;
+  background-color: var(--bg-color, #fff);
+  border-top: 1px solid var(--border-color);
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+
   span {
-    font-size: 14px;
     margin-left: 10px;
+    font-size: 14px;
   }
 
   &:hover {
