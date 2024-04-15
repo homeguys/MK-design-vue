@@ -2,13 +2,14 @@
  * @Author: wanglei
  * @Date: 2023-12-06 10:14:14
  * @LastEditors: wanglei
- * @LastEditTime: 2024-04-07 16:35:00
+ * @LastEditTime: 2024-04-07 16:55:56
  * @FilePath: \docs\.vitepress\configs\nav.ts
  * @Descripttion:
  */
 import type { DefaultTheme } from 'vitepress';
 
 export const nav: DefaultTheme.Config['nav'] = [
+  { text: '导航', link: '/zh-CN/nav/nav', activeMatch: '^/zh-CN/nav' },
   {
     text: '组件',
     link: '/zh-CN/components/index',
