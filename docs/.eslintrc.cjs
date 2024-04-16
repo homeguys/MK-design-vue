@@ -1,7 +1,7 @@
 /*
  * @Date: 2024-01-03 11:08:34
- * @LastEditTime: 2024-03-09 17:33:49
- * @FilePath: /docs/.eslintrc.cjs
+ * @LastEditTime: 2024-04-15 18:21:16
+ * @FilePath: \docs\.eslintrc.cjs
  */
 /* eslint-env node */
 require('@rushstack/eslint-patch/modern-module-resolution');

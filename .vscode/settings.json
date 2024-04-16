@@ -46,6 +46,9 @@
     "LastEditTime": "Do not edit",
     "FilePath": "no item name"
   },
+  "fileheader.configObj": {
+    "supportAutoLanguage": ["vue", "ts"]
+  },
   "[javascript][typescript][typescriptreact]": {
     "editor.codeActionsOnSave": {
       "source.fixAll.eslint": "explicit"

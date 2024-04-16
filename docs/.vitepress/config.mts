@@ -2,8 +2,8 @@
  * @Author: wanglei
  * @Date: 2023-12-05 22:13:56
  * @LastEditors: wanglei
- * @LastEditTime: 2024-02-28 17:57:34
- * @FilePath: /docs/.vitepress/config.mts
+ * @LastEditTime: 2024-04-16 09:47:17
+ * @FilePath: \docs\.vitepress\config.mts
  * @Descripttion:
  */
 import { defineConfig } from 'vitepress';
@@ -32,13 +32,16 @@ export default defineConfig({
       level: 'deep',
       label: '本页目录',
     },
+    editLink: {
+      pattern: 'https://git.piesat.cn:10004/wanglei/htht-design/tree/master/docs/:path',
+      text: 'Edit this page on GitLab',
+    },
     // socialLinks: [
     //   {
     //     icon: 'github',
     //     link: 'https://github.com/maomao1996/vitepress-fe-nav',
     //   },
     // ],
-
     footer: {
       message: '',
       copyright:

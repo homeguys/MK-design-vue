@@ -1,6 +1,6 @@
 /*
  * @Date: 2024-01-03 11:08:34
- * @LastEditTime: 2024-01-11 17:04:26
+ * @LastEditTime: 2024-04-15 18:21:04
  * @FilePath: \.eslintrc.cjs
  */
 /* eslint-env node */
@@ -47,6 +47,7 @@ module.exports = {
     'no-unused-vars': 'warn',
     'prefer-const': ['error', { ignoreReadBeforeAssign: false, destructuring: 'all' }],
     'lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
+    '@typescript-eslint/no-unused-vars': 'off',
   },
   settings: {
     'import/resolver': {

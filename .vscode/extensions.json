@@ -1,11 +1,11 @@
 {
   "recommendations": [
     "Vue.volar",
-    "Vue.vscode-typescript-vue-plugin",
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
     "stylelint.vscode-stylelint",
     "obkoro1.korofileheader",
-    "editorconfig.editorconfig"
+    "editorconfig.editorconfig",
+    "prograhammer.tslint-vue"
   ]
 }
