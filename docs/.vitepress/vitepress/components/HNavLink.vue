@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { computed } from 'vue';
-import { withBase } from 'vitepress';
+import { computed, onMounted, ref } from 'vue';
+import { withBase, useRoute } from 'vitepress';
 import { slugify } from '@mdit-vue/shared';
 
 import { NavLink } from '../types';
@@ -13,6 +13,8 @@ const props = defineProps<{
   desc?: NavLink['desc'];
   link: NavLink['link'];
 }>();
+
+const target = ref('');
 
 const formatTitle = computed(() => {
   if (!props.title) {
@@ -32,10 +34,16 @@ const formatBadge = computed(() => {
   }
   return props.badge;
 });
+
+onMounted(() => {
+  const route = useRoute();
+  const isNav = route.path.includes('zh-CN/nav');
+  target.value = isNav ? '_blank' : '';
+});
 </script>
 
 <template>
-  <a v-if="link" class="h-nav-link" :href="link" target="_blank" rel="noreferrer">
+  <a v-if="link" class="h-nav-link" :href="link" :target="target" rel="noreferrer">
     <article class="box" :class="{ 'has-badge': formatBadge }">
       <div class="box-header">
         <template v-if="!noIcon">
@@ -60,9 +68,9 @@ const formatBadge = computed(() => {
 
 <style lang="scss" scoped>
 .h-nav-link {
-  --m-nav-icon-box-size: 45px;
-  --m-nav-icon-size: 35px;
-  --m-nav-box-gap: 12px;
+  --h-nav-icon-box-size: 45px;
+  --h-nav-icon-size: 35px;
+  --h-nav-box-gap: 12px;
 
   display: block;
   height: 100%;
@@ -84,11 +92,11 @@ const formatBadge = computed(() => {
     display: flex;
     flex-direction: column;
     height: 100%;
-    padding: var(--m-nav-box-gap);
+    padding: var(--h-nav-box-gap);
     color: var(--vp-c-text-1);
 
     &.has-badge {
-      padding-top: calc(var(--m-nav-box-gap) + 2px);
+      padding-top: calc(var(--h-nav-box-gap) + 2px);
     }
 
     &-header {
@@ -101,21 +109,21 @@ const formatBadge = computed(() => {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: var(--m-nav-icon-box-size);
-    height: var(--m-nav-icon-box-size);
-    margin-right: calc(var(--m-nav-box-gap) - 2px);
-    font-size: var(--m-nav-icon-size);
+    width: var(--h-nav-icon-box-size);
+    height: var(--h-nav-icon-box-size);
+    margin-right: calc(var(--h-nav-box-gap) - 2px);
+    font-size: var(--h-nav-icon-size);
     background-color: var(--vp-c-bg-soft-down);
     border-radius: 6px;
     transition: background-color 0.25s;
 
     :deep(svg) {
-      width: var(--m-nav-icon-size);
+      width: var(--h-nav-icon-size);
       fill: currentColor;
     }
 
     :deep(img) {
-      width: var(--m-nav-icon-size);
+      width: var(--h-nav-icon-size);
       border-radius: 4px;
     }
   }
@@ -129,7 +137,7 @@ const formatBadge = computed(() => {
     white-space: nowrap;
 
     &:not(.no-icon) {
-      line-height: var(--m-nav-icon-box-size);
+      line-height: var(--h-nav-icon-box-size);
     }
   }
 
@@ -143,7 +151,7 @@ const formatBadge = computed(() => {
   .desc {
     display: -webkit-box;
     flex-grow: 1;
-    margin: calc(var(--m-nav-box-gap) - 2px) 0 0;
+    margin: calc(var(--h-nav-box-gap) - 2px) 0 0;
     overflow: hidden;
     font-size: 12px;
     line-height: 1.5;
@@ -156,9 +164,9 @@ const formatBadge = computed(() => {
 
 @media (width <= 960px) {
   .m-nav-link {
-    --m-nav-icon-box-size: 36px;
-    --m-nav-icon-size: 20px;
-    --m-nav-box-gap: 8px;
+    --h-nav-icon-box-size: 36px;
+    --h-nav-icon-size: 20px;
+    --h-nav-box-gap: 8px;
 
     .title {
       font-size: 14px;

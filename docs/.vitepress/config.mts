@@ -2,7 +2,7 @@
  * @Author: wanglei
  * @Date: 2023-12-05 22:13:56
  * @LastEditors: wanglei
- * @LastEditTime: 2024-04-16 09:47:17
+ * @LastEditTime: 2024-04-16 14:11:38
  * @FilePath: \docs\.vitepress\config.mts
  * @Descripttion:
  */
@@ -13,6 +13,7 @@ import { head, nav, sidebar } from './configs';
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   lang: 'zh-CN',
+  base: '/htht-design-vue',
   title: '南京航天宏图文档库',
   description: '前端开发组件文档、分享技术文档、常见问题以及实用工具链接',
   head,
@@ -32,10 +33,10 @@ export default defineConfig({
       level: 'deep',
       label: '本页目录',
     },
-    editLink: {
-      pattern: 'https://git.piesat.cn:10004/wanglei/htht-design/tree/master/docs/:path',
-      text: 'Edit this page on GitLab',
-    },
+    // editLink: {
+    //   pattern: 'https://git.piesat.cn:10004/wanglei/htht-design/tree/master/docs/:path',
+    //   text: 'Edit this page on GitLab',
+    // },
     // socialLinks: [
     //   {
     //     icon: 'github',

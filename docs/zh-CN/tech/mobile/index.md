@@ -1,12 +1,11 @@
 ---
-pageClass: h-nav-layout
+pageClass: h-mobile-layout
 outline: [2, 3, 4]
 ---
 
 <script setup>
 import NAV_DATA from './index'
 </script>
-<style src="./index.scss"></style>
 
 # 概览
 

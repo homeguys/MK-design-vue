@@ -2,7 +2,7 @@
  * @Author: wanglei
  * @Date: 2024-04-07 16:24:46
  * @LastEditors: wanglei
- * @LastEditTime: 2024-04-07 16:33:10
+ * @LastEditTime: 2024-04-16 13:31:21
  * @FilePath: \docs\.vitepress\configs\sidebar.ts
  * @Descripttion:
  */
@@ -30,7 +30,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       collapsed: false,
       items: [
         { text: '概览', link: '/zh-CN/tech/mobile/' },
-        { text: '雷电模拟器 + Charles App抓包', link: '/zh-CN/tech/mobile/Charles&Leidian' },
+        { text: '雷电模拟器 + Charles App抓包', link: '/zh-CN/tech/mobile/Charles-Leidian' },
       ],
     },
   ],
