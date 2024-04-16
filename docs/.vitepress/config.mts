@@ -2,7 +2,7 @@
  * @Author: wanglei
  * @Date: 2023-12-05 22:13:56
  * @LastEditors: wanglei
- * @LastEditTime: 2024-04-16 16:30:20
+ * @LastEditTime: 2024-04-16 17:15:48
  * @FilePath: \docs\.vitepress\config.mts
  * @Descripttion:
  */
@@ -14,7 +14,7 @@ import { head, nav, sidebar } from './configs';
 export default defineConfig({
   lang: 'zh-CN',
   base: '/htht-design-vue',
-  title: '南京航天宏图文档库',
+  title: '前端技术文档库',
   description: '前端开发组件文档、分享技术文档、常见问题以及实用工具链接',
   head,
   appearance: false,
@@ -36,6 +36,7 @@ export default defineConfig({
     search: {
       provider: 'local',
       options: {
+        detailedView: true,
         translations: {
           button: {
             buttonText: '搜索文档',

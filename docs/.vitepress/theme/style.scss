@@ -264,3 +264,26 @@
 .el-button.is-text:not(.is-disabled):hover {
   background-color: transparent !important;
 }
+
+/* 滚动条整体 */
+::-webkit-scrollbar {
+  z-index: 9999999;
+  width: 6px;
+  height: 6px;
+}
+
+/* 滑块 */
+::-webkit-scrollbar-thumb {
+  z-index: 9999999;
+  background-color: var(--vp-c-brand-1);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a0a0a0;
+}
+
+/* 滑道 */
+::-webkit-scrollbar-track {
+  border-radius: 3px;
+}
