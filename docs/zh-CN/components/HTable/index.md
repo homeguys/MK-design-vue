@@ -2,7 +2,7 @@
 pageClass: component-page-class
 ---
 
-# HTable
+# HTable 表格
 
 :::demo
 

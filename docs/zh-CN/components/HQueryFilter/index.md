@@ -2,7 +2,7 @@
 pageClass: component-page-class
 ---
 
-# HQueryFilter
+# HQueryFilter 查询筛选
 
 :::demo
 

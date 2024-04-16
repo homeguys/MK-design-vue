@@ -2,7 +2,7 @@
  * @Author: wanglei
  * @Date: 2023-12-05 22:13:56
  * @LastEditors: wanglei
- * @LastEditTime: 2024-04-16 14:11:38
+ * @LastEditTime: 2024-04-16 16:30:20
  * @FilePath: \docs\.vitepress\config.mts
  * @Descripttion:
  */
@@ -32,6 +32,32 @@ export default defineConfig({
     outline: {
       level: 'deep',
       label: '本页目录',
+    },
+    search: {
+      provider: 'local',
+      options: {
+        translations: {
+          button: {
+            buttonText: '搜索文档',
+            buttonAriaLabel: '搜索文档',
+          },
+          modal: {
+            noResultsText: '无法找到相关结果',
+            resetButtonTitle: '清除查询条件',
+            displayDetails: '展示详情',
+            footer: {
+              selectText: '选择',
+              navigateText: '切换',
+              closeText: '关闭',
+            },
+          },
+        },
+        miniSearch: {
+          searchOptions: {
+            fields: ['title', 'text', 'link'],
+          },
+        },
+      },
     },
     // editLink: {
     //   pattern: 'https://git.piesat.cn:10004/wanglei/htht-design/tree/master/docs/:path',

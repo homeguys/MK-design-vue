@@ -2,7 +2,7 @@
  * @Author: wanglei
  * @Date: 2024-04-07 16:24:46
  * @LastEditors: wanglei
- * @LastEditTime: 2024-04-16 13:31:21
+ * @LastEditTime: 2024-04-16 16:32:10
  * @FilePath: \docs\.vitepress\configs\sidebar.ts
  * @Descripttion:
  */
@@ -16,7 +16,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       collapsed: false,
       items: [
         {
-          text: 'HQueryFilter - 表格查询筛选',
+          text: 'HQueryFilter - 查询筛选',
           link: '/zh-CN/components/HQueryFilter/index.md',
         },
         { text: 'HTable - 表格', link: '/zh-CN/components/HTable/index.md' },
