@@ -3,13 +3,13 @@ export default [
     title: '产品展示',
     items: [
       {
-        icon: 'https://obs-nanjing.obs.cn-north-4.myhuaweicloud.com/static/Frontend%20technical%20documentation/nav/icons/fire.ico',
+        icon: 'https://img-nj.piesat.cn/static/Frontend/nav/icons/fire.ico',
         title: '火情产品',
         desc: '火情产品',
         link: 'https://fires.piesat.cn/#/',
       },
       {
-        icon: 'https://obs-nanjing.obs.cn-north-4.myhuaweicloud.com/static/Frontend%20technical%20documentation/nav/icons/air.ico',
+        icon: 'https://img-nj.piesat.cn/static/Frontend/nav/icons/air.ico',
         title: '大气产品',
         desc: '大气产品',
         link: 'https://air.piesat.cn/v2/#/',
@@ -44,7 +44,7 @@ export default [
     title: '可视化',
     items: [
       {
-        icon: 'https://obs-nanjing.obs.cn-north-4.myhuaweicloud.com/static/Frontend%20technical%20documentation/nav/icons/cesium.ico',
+        icon: 'https://img-nj.piesat.cn/static/Frontend/nav/icons/cesium.ico',
         title: 'Cesium',
         desc: '网络 3D 地理空间可视化',
         link: 'https://cesium.com/platform/cesiumjs/',
@@ -56,19 +56,19 @@ export default [
         link: 'https://openlayers.org/',
       },
       {
-        icon: 'https://obs-nanjing.obs.cn-north-4.myhuaweicloud.com/static/Frontend%20technical%20documentation/nav/icons/gaode.ico',
+        icon: 'https://img-nj.piesat.cn/static/Frontend/nav/icons/gaode.ico',
         title: '高德地图',
         desc: '高德地图开放平台',
         link: 'https://lbs.amap.com/',
       },
       {
-        icon: 'https://obs-nanjing.obs.cn-north-4.myhuaweicloud.com/static/Frontend%20technical%20documentation/nav/icons/AntV.ico',
+        icon: 'https://img-nj.piesat.cn/static/Frontend/nav/icons/AntV.ico',
         title: 'AntV',
         desc: '蚂蚁集团全新一代数据可视化解决方案，致力于提供一套简单方便、专业可靠、无限可能的数据可视化最佳实践。',
         link: 'https://antv.vision/zh/',
       },
       {
-        icon: 'https://obs-nanjing.obs.cn-north-4.myhuaweicloud.com/static/Frontend%20technical%20documentation/nav/icons/D3.ico',
+        icon: 'https://img-nj.piesat.cn/static/Frontend/nav/icons/D3.ico',
         title: 'D3.js',
         desc: '一个遵循 Web 标准用于可视化数据的 JavaScript 库',
         link: 'https://d3js.org',
@@ -121,13 +121,13 @@ export default [
         link: 'https://developer.mozilla.org/zh-CN',
       },
       {
-        icon: 'https://obs-nanjing.obs.cn-north-4.myhuaweicloud.com/static/Frontend%20technical%20documentation/nav/icons/location.ico',
+        icon: 'https://img-nj.piesat.cn/static/Frontend/nav/icons/location.ico',
         title: '地图坐标系转换',
         desc: '高德、腾讯、百度地图坐标系转换，经纬度转换',
         link: 'https://tool.lu/coordinate/',
       },
       {
-        icon: 'https://obs-nanjing.obs.cn-north-4.myhuaweicloud.com/static/Frontend%20technical%20documentation/nav/icons/es6.svg',
+        icon: 'https://img-nj.piesat.cn/static/Frontend/nav/icons/es6.svg',
         title: 'ES6 入门教程',
         desc: '阮一峰的网络日志',
         link: 'http://es6.ruanyifeng.com',
@@ -151,7 +151,7 @@ export default [
         link: 'https://www.tailwindcss.cn',
       },
       {
-        icon: 'https://obs-nanjing.obs.cn-north-4.myhuaweicloud.com/static/Frontend%20technical%20documentation/nav/icons/markdown.ico',
+        icon: 'https://img-nj.piesat.cn/static/Frontend/nav/icons/markdown.ico',
         title: 'Markdown编辑器',
         desc: 'Markdown在线编辑器',
         link: 'https://tool.lu/markdown/',
@@ -169,13 +169,13 @@ export default [
         link: 'https://tinypng.com',
       },
       {
-        icon: 'https://obs-nanjing.obs.cn-north-4.myhuaweicloud.com/static/Frontend%20technical%20documentation/nav/icons/json-cn.ico',
+        icon: 'https://img-nj.piesat.cn/static/Frontend/nav/icons/json-cn.ico',
         title: 'Json 中文网',
         desc: 'JSON 在线解析及格式化验证',
         link: 'https://www.json.cn',
       },
       {
-        icon: 'https://obs-nanjing.obs.cn-north-4.myhuaweicloud.com/static/Frontend%20technical%20documentation/nav/icons/chatgpt.ico',
+        icon: 'https://img-nj.piesat.cn/static/Frontend/nav/icons/chatgpt.ico',
         title: 'ChatGPT',
         desc: 'Open AI ChatGPT',
         link: 'https://chat.openai.com/chat',
@@ -307,7 +307,7 @@ export default [
       },
       {
         title: '博客园',
-        icon: 'https://obs-nanjing.obs.cn-north-4.myhuaweicloud.com/static/Frontend%20technical%20documentation/nav/icons/cnblogs.svg',
+        icon: 'https://img-nj.piesat.cn/static/Frontend/nav/icons/cnblogs.svg',
         desc: '博客园是一个面向开发者的知识分享社区',
         link: 'https://www.cnblogs.com',
       },

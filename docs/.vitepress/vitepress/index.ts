@@ -7,10 +7,10 @@
  * @Descripttion:
  */
 import VPDemo from './components/vp-demo.vue';
-import ApiTyping from './components/globals/vp-api-typing.vue';
+import ApiTyping from './components/vp-api-typing.vue';
 import VPApp from './components/vp-app.vue';
-import VPPdf from './components/vp-pdf.vue';
-import HNavLinks from './components/HNavLinks.vue';
+import VPNavLinks from './components/VPNavLinks.vue';
+import VPAuthor from './components/VPAuthor.vue';
 import type { Component } from 'vue';
 
 import '@htht/components/theme/theme.scss';
@@ -23,6 +23,6 @@ export { default as NotFound } from './components/vp-not-found.vue';
 export const globals: [string, Component][] = [
   ['Demo', VPDemo],
   ['ApiTyping', ApiTyping],
-  ['vp-pdf', VPPdf],
-  ['MNavLinks', HNavLinks],
+  ['VPNavLinks', VPNavLinks],
+  ['VPAuthor', VPAuthor],
 ];

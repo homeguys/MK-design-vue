@@ -1,3 +1,35 @@
+<!--
+ * @Author: wanglei
+ * @Date: 2024-04-03 16:46:39
+ * @LastEditors: wanglei
+ * @LastEditTime: 2024-04-03 17:41:51
+ * @FilePath: \docs\.vitepress\vitepress\components\HNavLink.vue
+ * @Descripttion:
+-->
+<template>
+  <a v-if="link" class="vp-nav-link" :href="link" :target="target" rel="noreferrer">
+    <article class="box" :class="{ 'has-badge': formatBadge }">
+      <div class="box-header">
+        <template v-if="!noIcon">
+          <div v-if="svg" class="icon" v-html="svg"></div>
+          <div v-else-if="icon && typeof icon === 'string'" class="icon">
+            <img
+              :src="withBase(icon)"
+              :alt="title"
+              onerror="this.parentElement.style.display='none'"
+            />
+          </div>
+        </template>
+        <h5 v-if="title" :id="formatTitle" class="title" :class="{ 'no-icon': noIcon }">
+          {{ title }}
+        </h5>
+      </div>
+      <Badge v-if="formatBadge" class="badge" :type="formatBadge.type" :text="formatBadge.text" />
+      <p v-if="desc" class="desc">{{ desc }}</p>
+    </article>
+  </a>
+</template>
+
 <script setup lang="ts">
 import { computed, onMounted, ref } from 'vue';
 import { withBase, useRoute } from 'vitepress';
@@ -42,32 +74,8 @@ onMounted(() => {
 });
 </script>
 
-<template>
-  <a v-if="link" class="h-nav-link" :href="link" :target="target" rel="noreferrer">
-    <article class="box" :class="{ 'has-badge': formatBadge }">
-      <div class="box-header">
-        <template v-if="!noIcon">
-          <div v-if="svg" class="icon" v-html="svg"></div>
-          <div v-else-if="icon && typeof icon === 'string'" class="icon">
-            <img
-              :src="withBase(icon)"
-              :alt="title"
-              onerror="this.parentElement.style.display='none'"
-            />
-          </div>
-        </template>
-        <h5 v-if="title" :id="formatTitle" class="title" :class="{ 'no-icon': noIcon }">
-          {{ title }}
-        </h5>
-      </div>
-      <Badge v-if="formatBadge" class="badge" :type="formatBadge.type" :text="formatBadge.text" />
-      <p v-if="desc" class="desc">{{ desc }}</p>
-    </article>
-  </a>
-</template>
-
 <style lang="scss" scoped>
-.h-nav-link {
+.vp-nav-link {
   --h-nav-icon-box-size: 45px;
   --h-nav-icon-size: 35px;
   --h-nav-box-gap: 12px;
@@ -163,7 +171,7 @@ onMounted(() => {
 }
 
 @media (width <= 960px) {
-  .m-nav-link {
+  .vp-nav-link {
     --h-nav-icon-box-size: 36px;
     --h-nav-icon-size: 20px;
     --h-nav-box-gap: 8px;
