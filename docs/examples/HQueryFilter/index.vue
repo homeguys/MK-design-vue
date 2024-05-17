@@ -1,16 +1,28 @@
+<!--
+ * @Author: wanglei
+ * @Date: 2024-04-07 16:24:46
+ * @LastEditors: wanglei
+ * @LastEditTime: 2024-04-19 17:38:49
+ * @FilePath: \docs\examples\HQueryFilter\index.vue
+ * @Descripttion:
+-->
 <template>
   <HQueryFilter
     ref="commonSearchRef"
     :data-source="dataSource"
-    :btn-config="btnConfig"
+    :init-request="true"
     :isLoading="false"
+    :showCollapsed="true"
+    :collapsed="true"
+    :isShowResetBtn="false"
+    :defaultWidth="170"
     @search="getList"
   />
 </template>
 
 <script setup lang="ts">
 import { reactive } from 'vue';
-import { type DataSource, type BtnConfig } from '@htht/components/HQueryFilter/index';
+import { type DataSource } from '@htht/components/HQueryFilter/index';
 
 // 搜索条件
 const dataSource = reactive<DataSource[]>([
@@ -19,24 +31,6 @@ const dataSource = reactive<DataSource[]>([
     label: '数据源名称:',
     value: '',
     key: 'name',
-    option: {
-      placeholder: '请输入数据源名称',
-    },
-  },
-  {
-    type: 'input',
-    label: '数据源名称:',
-    value: '',
-    key: 'name1',
-    option: {
-      placeholder: '请输入数据源名称',
-    },
-  },
-  {
-    type: 'input',
-    label: '数据源名称:',
-    value: '',
-    key: 'name2',
     option: {
       placeholder: '请输入数据源名称',
     },
@@ -72,52 +66,23 @@ const dataSource = reactive<DataSource[]>([
     key: 'datePicker',
     option: {
       placeholder: '请选择时间',
-      format: 'YYYY-MM-DD HH:mm:ss',
+      format: 'YYYY-MM-DD',
     },
   },
   {
     type: 'rangePicker',
     label: '来源:',
     value: [],
-    key: 'rangePicker',
+    key: ['startTime', 'endTime'],
     option: {
-      style: { width: '376px' },
-    },
-  },
-  {
-    type: 'rangePicker',
-    label: '来源:',
-    value: [],
-    key: 'rangePicker1',
-    option: {
-      style: { width: '376px' },
-    },
-  },
-  {
-    type: 'datePicker',
-    label: '来源:',
-    value: '',
-    key: 'datePicker1',
-    option: {
-      placeholder: '请选择时间',
-      format: 'YYYY-MM-DD HH:mm:ss',
+      style: { width: '356px' },
+      format: 'YYYY-MM-DD HH',
     },
   },
 ]);
 
-// 按钮功能
-const btnConfig: BtnConfig = {
-  reset: {
-    visible: true,
-  },
-  search: {
-    visible: true,
-  },
-};
-
 // 获取参数调用列表查询接口
 const getList = (params: any) => {
   console.warn('params', params);
-  console.warn(typeof params.rangePicker);
 };
 </script>

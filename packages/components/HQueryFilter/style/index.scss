@@ -35,9 +35,10 @@
       height: 24px;
       color: #000;
       cursor: pointer;
+      transform: rotateZ(180deg);
 
-      &.expand {
-        transform: rotateZ(180deg);
+      &.collapsed {
+        transform: rotateZ(0);
       }
     }
   }

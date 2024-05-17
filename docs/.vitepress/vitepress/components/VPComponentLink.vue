@@ -8,33 +8,31 @@
 -->
 <template>
   <a v-if="link" class="vp-nav-link" :href="link" :target="target" rel="noreferrer">
-    <BadgeRibbon v-if="formatBadge" :color="formatBadge.color" :text="formatBadge.text">
-      <article class="box" :class="{ 'has-badge': formatBadge }">
-        <div class="box-header">
-          <template v-if="!noIcon">
-            <div v-if="svg" class="icon" v-html="svg"></div>
-            <div v-else-if="icon && typeof icon === 'string'" class="icon">
-              <img
-                :src="withBase(icon)"
-                :alt="title"
-                onerror="this.parentElement.style.display='none'"
-              />
-            </div>
-          </template>
-          <h5 v-if="title" :id="formatTitle" class="title" :class="{ 'no-icon': noIcon }">
-            {{ title }}
-          </h5>
-        </div>
-        <p v-if="desc" class="desc">{{ desc }}</p>
-      </article>
-    </BadgeRibbon>
+    <article class="box">
+      <p></p>
+      <div class="box-header">
+        <template v-if="!noIcon">
+          <div v-if="svg" class="icon" v-html="svg"></div>
+          <div v-else-if="icon && typeof icon === 'string'" class="icon">
+            <img
+              :src="withBase(icon)"
+              :alt="title"
+              onerror="this.parentElement.style.display='none'"
+            />
+          </div>
+        </template>
+        <h5 v-if="title" :id="formatTitle" class="title" :class="{ 'no-icon': noIcon }">
+          {{ title }}
+        </h5>
+      </div>
+      <p v-if="desc" class="desc">{{ desc }}</p>
+    </article>
   </a>
 </template>
 
 <script setup lang="ts">
 import { computed, onMounted, ref } from 'vue';
 import { withBase, useRoute } from 'vitepress';
-import { BadgeRibbon } from 'ant-design-vue';
 import { slugify } from '@mdit-vue/shared';
 
 import { NavLink } from '../types';
@@ -62,13 +60,6 @@ const svg = computed(() => {
   return '';
 });
 
-const formatBadge = computed(() => {
-  if (typeof props.badge === 'string') {
-    return { text: props.badge, color: 'red' };
-  }
-  return props.badge || { text: '', color: 'transparent' };
-});
-
 onMounted(() => {
   const route = useRoute();
   const isNav = route.path.includes('zh-CN/nav');
@@ -90,16 +81,11 @@ onMounted(() => {
   border-radius: 8px;
   transition: all 0.25s;
 
-  :deep() {
-    .ant-ribbon {
-      top: 3px;
-    }
-  }
-
   &:hover {
     text-decoration: initial;
     background-color: var(--vp-c-bg-soft-up);
-    box-shadow: var(--vp-shadow-3);
+    border-color: var(--vp-c-brand);
+    box-shadow: var(--vp-shadow-2);
   }
 
   .box {
@@ -109,10 +95,6 @@ onMounted(() => {
     height: 100%;
     padding: var(--h-nav-box-gap);
     color: var(--vp-c-text-1);
-
-    &.has-badge {
-      padding-top: calc(var(--h-nav-box-gap) + 2px);
-    }
 
     &-header {
       display: flex;

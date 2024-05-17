@@ -13,7 +13,7 @@ export default [
     title: '移动端',
     items: [
       {
-        icon: '/icons/leidian.svg',
+        icon: 'https://img-nj.piesat.cn/static/Frontend/nav/icons/leidian.svg',
         title: '雷电模拟器 + Charles解决App抓包',
         desc: '雷电模拟器 + Charles解决App抓包',
         link: withBase('/zh-CN/tech/mobile/Charles-Leidian'),

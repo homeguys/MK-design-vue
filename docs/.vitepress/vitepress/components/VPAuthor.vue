@@ -29,41 +29,43 @@ withDefaults(defineProps<IProps>(), {
 </script>
 
 <style lang="scss" scoped>
-.component-page-class {
-  .vp-author {
-    margin-top: 50px;
+.vp-author {
+  margin-top: 50px;
 
-    .vp-author-title {
-      margin-bottom: 8px;
-      font-size: 12px;
-      opacity: 0.5;
+  .vp-author-title {
+    margin-bottom: 8px;
+    font-size: 13px;
+    opacity: 0.5;
+  }
+
+  ul {
+    box-sizing: border-box;
+    display: flex !important;
+    flex-flow: wrap;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    list-style: none !important;
+
+    &:hover {
+      li {
+        margin-inline-end: 5px;
+      }
     }
 
-    ul {
-      box-sizing: border-box;
-      display: flex;
-      flex-flow: wrap;
-      padding: 0;
-      margin: 0;
-      list-style: none;
+    li {
+      width: 32px;
+      height: 32px;
+      margin-inline-end: -8px;
+      margin-top: 0;
+      cursor: pointer;
+      transition: all 0.3s;
 
-      &:hover {
-        li {
-          margin-inline-end: 3px;
-        }
-      }
-
-      li {
-        width: 26px;
-        height: 26px;
-        margin-inline-end: -8px;
-        cursor: pointer;
-        transition: all 0.3s;
-
-        img {
-          width: 100%;
-          height: 100%;
-        }
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
       }
     }
   }
