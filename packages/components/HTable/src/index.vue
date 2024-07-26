@@ -2,9 +2,9 @@
  * @Author: 王佳宾
  * @Date: 2023-11-01 17:54:08
  * @LastEditors: wanglei
- * @LastEditTime: 2024-03-06 17:07:35
+ * @LastEditTime: 2024-07-26 14:35:01
  * @Description: 通用表格
- * @FilePath: /packages/components/HTable/src/index.vue
+ * @FilePath: \packages\components\HTable\src\index.vue
 -->
 <template>
   <section class="ht-table-container">
@@ -65,8 +65,9 @@
 </template>
 
 <script setup lang="ts">
-import { useSlots, withDefaults } from 'vue';
+import { onMounted, useSlots, withDefaults } from 'vue';
 import { Table, Tooltip } from 'ant-design-vue';
+import { treeUtil } from '@htht/utils';
 import type { HTableProps } from './index';
 
 // 插槽的实例
@@ -109,5 +110,9 @@ const getIndex = (index: number): number => {
   }
   return index;
 };
+
+onMounted(() => {
+  console.warn('treeUtil', treeUtil);
+});
 </script>
 .

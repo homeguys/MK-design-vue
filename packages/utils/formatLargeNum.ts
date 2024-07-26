@@ -2,12 +2,11 @@
  * @Author: wanglei
  * @Date: 2024-07-26 11:17:36
  * @LastEditors: wanglei
- * @LastEditTime: 2024-07-26 13:44:22
+ * @LastEditTime: 2024-07-26 13:46:15
  * @FilePath: \packages\utils\formatLargeNum.ts
- * @Descripttion:
+ * @Descripttion: 处理数值过大超长数字
  */
 /**
- * 处理数值过大超长数字
  * @param {number} num 需要处理的数值
  * @param {number} decimal 需要保留的小数位（只有数值是小数才保留）
  * @returns {string | undefined} 处理后的数值 + 单位字符串
