@@ -2,7 +2,7 @@
  * @Author: wanglei
  * @Date: 2024-04-28 15:43:23
  * @LastEditors: wanglei
- * @LastEditTime: 2024-07-26 18:13:31
+ * @LastEditTime: 2024-07-29 16:52:57
  * @FilePath: \packages\utils\treeUtil.ts
  * @Descripttion:
  */
@@ -51,13 +51,13 @@ function findParentIds(dataSource: any[] = [], id: string | number = '', key = '
  * @param {string} key id别名
  * @returns {object} 查找到的节点
  */
-function findTreeItemById(dataSource: any[] = [], id: string | number = '', key = 'id') {
+function findItemById(dataSource: any[] = [], id: string | number = '', key = 'id') {
   for (const item of dataSource) {
     if (item[key] === id) {
       return item;
     }
     if (item.children) {
-      const childItem: any = findTreeItemById(item.children, id, key);
+      const childItem: any = findItemById(item.children, id, key);
       if (childItem) {
         return childItem;
       }
@@ -184,4 +184,4 @@ const getRouterTree = (dataSource: any[]) => {
   // return dataSource.map((item: any) => getTreeData(item));
 };
 
-export default { findParentIds, findTreeItemById, flatTree, modifyTreeKeys, getRouterTree };
+export default { findParentIds, findItemById, flatTree, modifyTreeKeys, getRouterTree };

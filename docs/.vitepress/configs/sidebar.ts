@@ -2,7 +2,7 @@
  * @Author: wanglei
  * @Date: 2024-04-07 16:24:46
  * @LastEditors: wanglei
- * @LastEditTime: 2024-04-16 16:32:10
+ * @LastEditTime: 2024-07-29 17:05:40
  * @FilePath: \docs\.vitepress\configs\sidebar.ts
  * @Descripttion:
  */
@@ -34,5 +34,26 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       ],
     },
   ],
-  '/zh-CN/utils/': [{ text: '工具总览', link: '/zh-CN/utils/index.md' }],
+  '/zh-CN/utils/': [
+    { text: '工具总览', link: '/zh-CN/utils/index.md' },
+    {
+      text: '常规',
+      collapsed: false,
+      items: [
+        { text: 'filterParams - 过滤参数', link: '/zh-CN/utils/filterParams' },
+        { text: 'downloadFile - 下载文件', link: '/zh-CN/utils/downloadFile' },
+        { text: 'formatLargeNum - 长数值', link: '/zh-CN/utils/formatLargeNum' },
+      ],
+    },
+    {
+      text: '树结构【treeUtil】',
+      collapsed: false,
+      items: [
+        { text: 'findParentIds - 查找父级id', link: '/zh-CN/utils/treeUtil/findParentIds' },
+        { text: 'findItemById - 根据id查找项', link: '/zh-CN/utils/treeUtil/findItemById' },
+        { text: 'flatTree - 扁平化树结构', link: '/zh-CN/utils/treeUtil/flatTree' },
+        { text: 'modifyTreeKeys - 修改树结构键', link: '/zh-CN/utils/treeUtil/modifyTreeKeys' },
+      ],
+    },
+  ],
 };

@@ -110,9 +110,5 @@ const getIndex = (index: number): number => {
   }
   return index;
 };
-
-onMounted(() => {
-  console.warn('treeUtil', treeUtil);
-});
 </script>
 .
