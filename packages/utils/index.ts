@@ -1,8 +1,8 @@
 /*
  * @Author: wanglei
  * @Date: 2024-07-25 14:08:02
- * @LastEditors: wanglei
- * @LastEditTime: 2024-07-26 14:24:05
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2024-09-11 11:01:36
  * @FilePath: \packages\utils\index.ts
  * @Descripttion:
  */
@@ -12,3 +12,4 @@ export { default as formatLargeNum } from './formatLargeNum';
 export { default as hasChildren } from './hasChildren';
 export { default as filterParams } from './filterParams';
 export { default as treeUtil } from './treeUtil';
+export { default as findRangeByValue } from './findRangeByValue';

@@ -1,8 +1,8 @@
 /*
  * @Author: wanglei
  * @Date: 2024-04-07 16:24:46
- * @LastEditors: wanglei
- * @LastEditTime: 2024-07-29 17:05:40
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2024-09-11 11:02:07
  * @FilePath: \docs\.vitepress\configs\sidebar.ts
  * @Descripttion:
  */
@@ -43,6 +43,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         { text: 'filterParams - 过滤参数', link: '/zh-CN/utils/filterParams' },
         { text: 'downloadFile - 下载文件', link: '/zh-CN/utils/downloadFile' },
         { text: 'formatLargeNum - 长数值', link: '/zh-CN/utils/formatLargeNum' },
+        { text: 'findRangeByValue - 查找区间', link: '/zh-CN/utils/findRangeByValue' },
       ],
     },
     {
