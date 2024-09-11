@@ -1,8 +1,8 @@
 <!--
  * @Author: 王佳宾
  * @Date: 2023-11-01 17:54:08
- * @LastEditors: wanglei
- * @LastEditTime: 2024-07-26 14:35:01
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2024-09-11 11:07:53
  * @Description: 通用表格
  * @FilePath: \packages\components\HTable\src\index.vue
 -->
@@ -65,9 +65,8 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, useSlots, withDefaults } from 'vue';
+import { useSlots, withDefaults } from 'vue';
 import { Table, Tooltip } from 'ant-design-vue';
-import { treeUtil } from '@htht/utils';
 import type { HTableProps } from './index';
 
 // 插槽的实例

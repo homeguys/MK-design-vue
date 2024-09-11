@@ -2,7 +2,7 @@
  * @Author: wanglei
  * @Date: 2023-12-06 10:33:11
  * @LastEditors: wanglei
- * @LastEditTime: 2024-07-29 17:53:17
+ * @LastEditTime: 2024-07-31 14:18:09
  * @FilePath: \docs\zh-CN\utils\treeUtil\modifyTreeKeys.md
  * @Descripttion:
 -->
@@ -32,20 +32,14 @@ interface IExtra {
  *    label: 'value', // 正常重命名原有字段
  *    component: (item) => {}, // 如果是函数，则是新增字段, 根据传入的item自定义值
  *  }
- * @param {object} extra
- * {
- *    childrenKey: 'children', // children的别名
- *    showOtherParam: 'false', // 是否展示其他键值
- *  }
- * @param {boolean} showOtherParam
+ * @param {boolean} showOtherParam // 是否展示其他键值，默认是true
+ * @param {string} childrenKey // 树结构中子节点key，默认是children
  */
 modifyTreeKeys(
   dataSource: any[],
   keyMapping: IKeyMapping = {},
-  extra: IExtra = {
-    childrenKey: 'children',
-    showOtherParam: false,
-  },
+  showOtherParam: false,
+  childrenKey: 'children',
 )
 ```
 
@@ -89,7 +83,13 @@ const dataSource = [
   },
 ];
 
-const modifiedTree = modifyTreeKeys(dataSource, keyMapping, { showOtherParam: true });
+const keyMapping = {
+  id: 'identifier',
+  name: 'label',
+  children: 'subNodes'
+}
+
+const modifiedTree = modifyTreeKeys(dataSource, keyMapping, showOtherParam: true);
 console.log(JSON.stringify(modifiedTree, null, 2));
 
 /*

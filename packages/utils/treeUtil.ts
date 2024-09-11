@@ -2,7 +2,7 @@
  * @Author: wanglei
  * @Date: 2024-04-28 15:43:23
  * @LastEditors: wanglei
- * @LastEditTime: 2024-07-29 16:52:57
+ * @LastEditTime: 2024-08-27 11:06:40
  * @FilePath: \packages\utils\treeUtil.ts
  * @Descripttion:
  */
@@ -93,11 +93,6 @@ interface IKeyMapping {
   [originKey: string]: string | TAnyFunction;
 }
 
-interface IExtra {
-  childrenKey?: string | undefined;
-  showOtherParam?: boolean | undefined;
-}
-
 /**
  * 批量修改树结构数据key
  * @param {array} dataSource 要修改key的树结构数据
@@ -107,31 +102,24 @@ interface IExtra {
  *    label: 'value', // 正常重命名原有字段
  *    component: (item) => {}, // 如果是函数，则是新增字段, 根据传入的item自定义值
  *  }
- * @param {object} extra
- * {
- *    childrenKey: 'children', // children的别名
- *    showOtherParam: 'false', // 是否展示其他键值
- *  }
- * @param {boolean} showOtherParam
+ * @param {boolean} showOtherParam // 是否展示其他键值，默认是true
+ * @param {string} childrenKey // 树结构中子节点key，默认是children
  */
 const modifyTreeKeys = (
   dataSource: any[],
   keyMapping: IKeyMapping = {},
-  extra: IExtra = {
-    childrenKey: 'children',
-    showOtherParam: false,
-  },
+  showOtherParam: boolean = false,
+  childrenKey: string = 'children',
 ) => {
-  const { childrenKey = 'children', showOtherParam = false } = extra || {};
   const getTreeData = (item: any) => {
     const changedTree: any = {};
 
-    Object.entries(keyMapping).forEach((ele) => {
+    Object.entries(keyMapping).forEach((ele: any) => {
       const [oldKey, newKey] = ele || [];
 
       if (typeof newKey === 'function') {
         changedTree[oldKey] = newKey(item);
-      } else if (newKey && item[oldKey]) {
+      } else if (newKey && typeof item[oldKey] !== null && typeof item[oldKey] !== undefined) {
         changedTree[newKey] = item[oldKey];
       }
     });
