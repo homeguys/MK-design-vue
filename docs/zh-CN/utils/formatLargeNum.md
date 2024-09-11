@@ -1,8 +1,8 @@
 <!--
  * @Author: wanglei
  * @Date: 2023-12-06 10:33:11
- * @LastEditors: wanglei
- * @LastEditTime: 2024-07-29 16:22:12
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2024-09-11 10:39:39
  * @FilePath: \docs\zh-CN\utils\formatLargeNum.md
  * @Descripttion:
 -->
@@ -28,27 +28,27 @@ formatLargeNum(num: number, decimal = 2)
 
 ```js
 formatLargeNum(1234567890);
-// => 输出 "12.35亿"
+// => "12.35亿"
 formatLargeNum(12345678, 2);
-// => 输出 "1234.57万"
+// => "1234.57万"
 formatLargeNum(1234567);
-// => 输出 "123.46万"
+// => "123.46万"
 formatLargeNum(1234);
-// => 输出 "1234"
+// => "1234"
 formatLargeNum(123);
-// => 输出 "123"
+// => "123"
 formatLargeNum(1234567890.12, 3);
-// => 输出 "12.346亿"
+// => "12.346亿"
 formatLargeNum(987654.321, 2);
-// => 输出 "98.77万"
+// => "98.77万"
 formatLargeNum(1.001, 2);
-// => 输出 "1.00"
+// => "1.00"
 formatLargeNum(10001);
-// => 输出 "1.00万"
+// => "1.00万"
 formatLargeNum(1000000);
-// => 输出 "100.00万"
+// => "100.00万"
 formatLargeNum(10000000);
-// => 输出 "1.00千万"
+// => "1.00千万"
 formatLargeNum(100000000);
-// => 输出 "1.00亿"
+// => "1.00亿"
 ```
