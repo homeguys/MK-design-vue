@@ -1,8 +1,8 @@
 /*
  * @Author: wanglei
  * @Date: 2023-12-06 10:14:14
- * @LastEditors: wanglei
- * @LastEditTime: 2024-04-16 10:52:03
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2024-09-11 14:37:13
  * @FilePath: \docs\.vitepress\configs\nav.ts
  * @Descripttion:
  */
@@ -33,6 +33,11 @@ export const nav: DefaultTheme.Config['nav'] = [
         text: '移动端',
         link: '/zh-CN/tech/mobile/',
         activeMatch: '^/zh-CN/tech/mobile',
+      },
+      {
+        text: '框架',
+        link: '/zh-CN/tech/frameWork/',
+        activeMatch: '^/zh-CN/tech/frameWork',
       },
     ],
   },

@@ -2,7 +2,7 @@
  * @Author: wanglei
  * @Date: 2024-04-07 16:24:46
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2024-09-11 11:02:07
+ * @LastEditTime: 2024-09-12 09:50:18
  * @FilePath: \docs\.vitepress\configs\sidebar.ts
  * @Descripttion:
  */
@@ -31,6 +31,16 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       items: [
         { text: '概览', link: '/zh-CN/tech/mobile/' },
         { text: '雷电模拟器 + Charles App抓包', link: '/zh-CN/tech/mobile/Charles-Leidian' },
+      ],
+    },
+  ],
+  '/zh-CN/tech/frameWork': [
+    {
+      text: '框架',
+      items: [
+        { text: '概览', link: '/zh-CN/tech/frameWork/' },
+        { text: 'Python2和Python3安装', link: '/zh-CN/tech/frameWork/Python-Install/index' },
+        { text: 'Yarn安装依赖问题', link: '/zh-CN/tech/frameWork/Yarn-Install/index' },
       ],
     },
   ],

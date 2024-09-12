@@ -4,8 +4,6 @@ editLink: true
 
 # 雷电模拟器 + Charles解决App抓包
 
-<!-- <span style="color: var(--vp-c-brand-1); fontWeight: bold">作者：王磊</span> -->
-
 <VPAuthor :members="[
     { avatar: 'https://img-nj.piesat.cn/static/Frontend/avatar/wl.png', name: '王磊' }
   ]"
