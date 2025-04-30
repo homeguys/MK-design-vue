@@ -2,8 +2,8 @@
  * @Author: wanglei
  * @Date: 2023-12-05 22:13:56
  * @LastEditors: wanglei
- * @LastEditTime: 2024-04-16 17:15:48
- * @FilePath: \docs\.vitepress\config.mts
+ * @LastEditTime: 2025-04-30 11:24:06
+ * @FilePath: /docs/.vitepress/config.mts
  * @Descripttion:
  */
 import { defineConfig } from 'vitepress';
@@ -13,7 +13,7 @@ import { head, nav, sidebar } from './configs';
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   lang: 'zh-CN',
-  base: '/htht-design-vue',
+  base: '/MK-design-vue',
   title: '前端技术文档库',
   description: '前端开发组件文档、分享技术文档、常见问题以及实用工具链接',
   head,
