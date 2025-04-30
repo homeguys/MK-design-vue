@@ -11,7 +11,7 @@ editLink: true
 
 ## 问题一：yarn install时提示证书过期
 
-![alt text](image.png)
+![alt text](image-1.png)
 
 ### 问题原因
 
@@ -35,7 +35,7 @@ yarn config set strict-ssl false
 
 ## 问题二：yarn install时提示完整性校验失败
 
-![alt text](image-1.png)
+![alt text](image-2.png)
 
 ### 问题原因
 

@@ -1,9 +1,9 @@
 /*
  * @Author: wanglei
  * @Date: 2023-12-06 10:14:14
- * @LastEditors: Please set LastEditors
- * @LastEditTime: 2024-09-11 14:37:13
- * @FilePath: \docs\.vitepress\configs\nav.ts
+ * @LastEditors: wanglei
+ * @LastEditTime: 2025-04-29 17:47:06
+ * @FilePath: /docs/.vitepress/configs/nav.ts
  * @Descripttion:
  */
 import type { DefaultTheme } from 'vitepress';
@@ -22,23 +22,7 @@ export const nav: DefaultTheme.Config['nav'] = [
   },
   {
     text: '技术文档',
+    link: '/zh-CN/tech/index',
     activeMatch: '^/zh-CN/tech',
-    items: [
-      {
-        text: 'Gis文档',
-        link: '/zh-CN/tech/gis/',
-        activeMatch: '^/zh-CN/tech/gis',
-      },
-      {
-        text: '移动端',
-        link: '/zh-CN/tech/mobile/',
-        activeMatch: '^/zh-CN/tech/mobile',
-      },
-      {
-        text: '框架',
-        link: '/zh-CN/tech/frameWork/',
-        activeMatch: '^/zh-CN/tech/frameWork',
-      },
-    ],
   },
 ];

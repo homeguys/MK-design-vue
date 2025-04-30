@@ -2,7 +2,7 @@
  * @Author: wanglei
  * @Date: 2023-12-05 22:13:56
  * @LastEditors: wanglei
- * @LastEditTime: 2025-04-30 11:24:06
+ * @LastEditTime: 2025-04-30 11:28:40
  * @FilePath: /docs/.vitepress/config.mts
  * @Descripttion:
  */
@@ -25,7 +25,7 @@ export default defineConfig({
   },
   themeConfig: {
     i18nRouting: false,
-    logo: '/logo.png',
+    logo: 'https://img-nj.piesat.cn/static/Frontend/avatar/wl_circle.png',
     nav,
     sidebar,
     /* 右侧大纲配置 */
@@ -72,8 +72,7 @@ export default defineConfig({
     // ],
     footer: {
       message: '',
-      copyright:
-        'Copyright © 2024 航天宏图信息技术股份有限公司 版权所有 | 京ICP备08011069号 | 京公网安备 11010802035123号',
+      copyright: 'Copyright © 2024-present Wanglei. All rights reserved.',
     },
 
     darkModeSwitchLabel: '外观',

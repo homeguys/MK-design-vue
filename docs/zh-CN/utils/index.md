@@ -2,17 +2,23 @@
  * @Author: wanglei
  * @Date: 2023-12-06 10:33:11
  * @LastEditors: wanglei
- * @LastEditTime: 2024-03-01 11:11:27
+ * @LastEditTime: 2025-04-25 16:28:52
  * @FilePath: /docs/zh-CN/utils/index.md
  * @Descripttion:
 -->
 
-# 工具总览
+# 简介
 
-## 工具列表
+汇集了一些常用的工具函数，特别是在业务中特定的功能，旨在简化日常开发任务，提高代码效率。
+
+## 安装
 
 ```
-xxx
-xxx
-xxx
+npm install @MK/utils
 ```
+
+## 🌟 核心特性
+
+- **模块化设计**：支持按需引入，Tree-Shaking 友好
+- **类型完备**：完整TypeScript支持
+- **浏览器支持**：现代浏览器支持好

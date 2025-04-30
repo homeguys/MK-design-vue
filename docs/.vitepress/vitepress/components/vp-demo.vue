@@ -27,7 +27,7 @@ const decodedDescription = computed(() => decodeURIComponent(props.description!)
 const { text, isSupported, copy } = useClipboard({
   source: decodeURIComponent(props.rawSource),
 });
-const [sourceVisible, toggleSourceVisible] = useToggle();
+const [sourceVisible, toggleSourceVisible] = useToggle(true);
 
 const onSourceVisibleKeydown = (e: KeyboardEvent) => {
   if (['Enter', 'Space'].includes(e.code)) {

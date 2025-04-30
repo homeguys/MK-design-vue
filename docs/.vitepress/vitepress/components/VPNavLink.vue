@@ -2,8 +2,8 @@
  * @Author: wanglei
  * @Date: 2024-04-03 16:46:39
  * @LastEditors: wanglei
- * @LastEditTime: 2024-04-03 17:41:51
- * @FilePath: \docs\.vitepress\vitepress\components\HNavLink.vue
+ * @LastEditTime: 2025-04-29 17:50:48
+ * @FilePath: /docs/.vitepress/vitepress/components/VPNavLink.vue
  * @Descripttion:
 -->
 <template>
@@ -125,6 +125,7 @@ onMounted(() => {
     align-items: center;
     justify-content: center;
     width: var(--h-nav-icon-box-size);
+    min-width: var(--h-nav-icon-box-size);
     height: var(--h-nav-icon-box-size);
     margin-right: calc(var(--h-nav-box-gap) - 2px);
     font-size: var(--h-nav-icon-size);

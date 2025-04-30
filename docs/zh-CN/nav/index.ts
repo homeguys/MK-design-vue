@@ -16,27 +16,9 @@ export default [
       },
       {
         icon: '/logo.png',
-        title: '濮阳智慧环保',
-        desc: '濮阳智慧环保',
-        link: 'http://10.254.240.220:19091/#/',
-      },
-      {
-        icon: '/logo.png',
         title: '运管平台',
         desc: '运营管理平台',
         link: 'https://fires.piesat.cn/yunguan/#/',
-      },
-      {
-        icon: '/logo.png',
-        title: '微生态',
-        desc: '生态环境监测服务平台',
-        link: 'http://124.70.8.18:8086/v-ecology-hb/#/simple/index',
-      },
-      {
-        icon: '/logo.png',
-        title: '一屏知甬水',
-        desc: '一屏知甬水',
-        link: 'http://221.6.62.229:48880/#/',
       },
     ],
   },
@@ -142,7 +124,7 @@ export default [
         icon: 'https://web-assets.dcloud.net.cn/unidoc/zh/icon.png',
         title: 'uni-app',
         desc: '一个使用 Vue.js 开发所有前端应用的框架',
-        link: 'https://uniapp.dcloud.net.cn',
+        link: 'https://Uniapp.dcloud.net.cn',
       },
       {
         icon: 'https://www.tailwindcss.cn/favicons/apple-touch-icon.png',

@@ -3,12 +3,12 @@ layout: home
 layoutClass: 'ht-home-layout'
 
 hero:
-  name: 航天宏图
-  text: 前端技术文档库
+  name: 前端
+  text: 技术文档库
   tagline: 积累知识，是攀登进步的坚实阶梯
   image:
-    src: /logo.png
-    alt: 南京航天宏图
+    src: https://img-nj.piesat.cn/static/Frontend/avatar/wl_circle.png
+    alt:
   actions:
     - text: 组件库
       link: /zh-CN/components/index
@@ -28,7 +28,7 @@ features:
   - icon: 📘
     title: 技术文档
     details: 前端各种技术文档
-    link: /zh-CN/tech/gis/
+    link: /zh-CN/tech/index
     linkText: 文档
 ---
 
