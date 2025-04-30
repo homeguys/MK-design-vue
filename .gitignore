@@ -1,30 +1,9 @@
-# Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
+# 忽略所有文件
+*
 
-node_modules
-.DS_Store
-dist
-build
-dist-ssr
-coverage
-*.local
-*.zip
-.stylelintcache
+# 但不忽略.gitignore本身
+!.gitignore
 
-# Editor directories and files
-# .vscode/*
-# !.vscode/extensions.json
-.idea
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
-
-docs/.vitepress/cache/**/*
+# 包含指定文件夹及其子文件夹下的所有文件
+!/docs/
+!/docs/**
