@@ -19,7 +19,7 @@ HQueryFilter/index
 | index | unique identification | string/null | —      |      |
 
 <VPAuthor :members="[
-    { avatar: 'https://img-nj.piesat.cn/static/Frontend/avatar/wjb.png', name: '王佳宾' },
-    { avatar: 'https://img-nj.piesat.cn/static/Frontend/avatar/wl.png', name: '王磊' }
-  ]"
+{ avatar: 'https://img-nj.piesat.cn/static/Frontend/avatar/wl.png', name: '王磊' },
+{ avatar: 'https://img-nj.piesat.cn/static/Frontend/avatar/wjb.png', name: '王佳宾' }
+]"
 />

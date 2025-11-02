@@ -2,7 +2,7 @@
  * @Author: wanglei
  * @Date: 2023-12-06 10:33:11
  * @LastEditors: wanglei
- * @LastEditTime: 2025-04-25 16:28:52
+ * @LastEditTime: 2025-11-02 21:12:58
  * @FilePath: /docs/zh-CN/utils/index.md
  * @Descripttion:
 -->
@@ -13,8 +13,14 @@
 
 ## 安装
 
+使用npm或yarn安装
+
 ```
 npm install @MK/utils
+```
+
+```
+yarn install @MK/utils
 ```
 
 ## 🌟 核心特性

@@ -13,7 +13,7 @@ hero:
     - text: 组件库
       link: /zh-CN/components/index
     - text: 文档库
-      link: /zh-CN/tech/gis/
+      link: /zh-CN/tech/
 features:
   - icon: 📖
     title: 前端组件
